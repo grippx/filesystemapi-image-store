@@ -179,15 +179,6 @@
         }
     }
 
-    ImageFile.fromJSON = function(obj) {
-        var imageFile = new ImageFile(obj.url);
-        if (obj.hasOwnProperty('modifiedDate')) {
-            imageFile.setModified(obj.modifiedDate);
-        }
-        return imageFile;
-    }
-
-
     window.updatePicOnServer = function() {
         dlog('updating pic on server...');
         $.get('update.php').then(function() {
