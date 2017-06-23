@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="log well" id="log">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="well text-center">
+                        <button type="button" class="btn btn-lg btn-success" onclick="document.location.reload()">Reload</button>&nbsp;&nbsp;
+                        <button type="button" class="btn btn-lg btn-primary" onclick="updatePicOnServer()">Update image #1 on server</button>&nbsp;&nbsp;
+                        <button type="button" class="btn btn-lg btn-danger" onclick="clearDb()">Drop DB</button>
+                    </div>
+                    <div id="main"></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="well">
+                        <h4>Files on server</h4>
+                        <div> <a href='pics/pic0.png'>pics/pic0.png</a></div>
+                        <div> <a href='pics/pic1.png'>pics/pic1.png</a></div>
+                        <div> <a href='pics/pic2.png'>pics/pic2.png</a></div>
+                        <div> <a href='pics/pic3.png'>pics/pic3.png</a></div>
+                    </div>
+                    <div class="well">
+                        <h4>Tested with</h4> 
+                        Chrome
+                        <br> Opera
+                        <br> Android Chrome
+                        <br> <s>iOS Safari</s>
+                        <br><s>Firefox</s>
+                        <br><s>IE 11</s>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
+<script src="http://cdn.jsdelivr.net/pouchdb/6.2.0/pouchdb.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="utils.js"></script>
+<script src="file.js"></script>
+<script src="app.js"></script>
+
+</html>
